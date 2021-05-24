@@ -1,0 +1,518 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  font-family: "DM Sans", sans-serif;
+  text-decoration: none;
+  color: black;
+  scroll-behavior: smooth;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+body header {
+  width: 100%;
+  border-bottom: 1px solid #e1e6e6;
+  scroll-behavior: smooth;
+}
+
+body header nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header nav div {
+  margin: 5px;
+}
+
+body header nav #logo {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+}
+
+body header nav .right {
+  -ms-flex-preferred-size: 85%;
+      flex-basis: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header nav .right .search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f0f3f4;
+  padding: 3px;
+  border-radius: 3px;
+  width: 50%;
+}
+
+body header nav .right .search-bar input {
+  background-color: transparent;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  font-size: 18px;
+}
+
+body header nav .right .search-bar input:focus {
+  outline: none;
+}
+
+body header nav .right .search-bar i {
+  padding: 3px 12px;
+  color: #6f7070;
+}
+
+body header nav .right img {
+  margin: 0 15px;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #f0f3f4;
+}
+
+body main #side-bar {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  padding: 10px 25px;
+  background-color: #fff;
+}
+
+body main #side-bar #vertical-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main #side-bar #vertical-nav button {
+  cursor: pointer;
+  outline: none;
+  background-color: #1657cd;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 2.25px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+body main #side-bar #vertical-nav #nav-links {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+body main #side-bar #vertical-nav #nav-links::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #e1e6e6;
+}
+
+body main #side-bar #vertical-nav #nav-links .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0;
+  font-size: 16px;
+}
+
+body main #side-bar #vertical-nav #nav-links .nav-link span {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+body main #side-bar #vertical-nav #nav-links .nav-link span i {
+  color: #6f7070;
+}
+
+body main #side-bar #vertical-nav #nav-links .active {
+  color: #1657cd;
+  font-weight: bold;
+}
+
+body main #side-bar #vertical-nav #nav-links .active span i {
+  color: #1657cd;
+}
+
+body main #side-bar #vertical-nav #teams .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0;
+  font-size: 16px;
+}
+
+body main #side-bar #vertical-nav #teams .nav-link span {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+body main #side-bar #vertical-nav #teams .team .nav-link .color-code div {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+body main #side-bar #vertical-nav #actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main #setting-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 85%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin: 0;
+}
+
+body main #setting-section #toggle-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #757575;
+  text-transform: capitalize;
+  background-color: #fff;
+  padding: 10px;
+}
+
+body main #setting-section #toggle-bar p {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+body main #setting-section #toggle-bar #active {
+  color: #1657cd;
+  font-weight: bold;
+  position: relative;
+}
+
+body main #setting-section #toggle-bar #active::after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  right: 0;
+  left: 0;
+  background-color: #1657cd;
+  height: 2px;
+}
+
+body main #setting-section #setting-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main #setting-section #setting-options nav {
+  background-color: #fff;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 40px 20px;
+  border-radius: 3px;
+}
+
+body main #setting-section #setting-options nav a {
+  width: 100%;
+}
+
+body main #setting-section #setting-options nav a div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0;
+  font-size: 16px;
+  margin: 0 10px;
+  position: relative;
+  width: 100%;
+  margin-left: 0;
+  padding: 20px 0;
+}
+
+body main #setting-section #setting-options nav a div::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #eaf0f0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+body main #setting-section #setting-options nav a div span {
+  margin: 0 10px;
+}
+
+body main #setting-section #setting-options nav a div p {
+  margin: 0 10px;
+  font-size: 14px;
+  color: #202124;
+}
+
+body main #setting-section #setting-options #setting-detail {
+  margin: 40px 0;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+body main #setting-section #setting-options #setting-detail div {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+body main #setting-section #setting-options #setting-detail div h1 {
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+body main #setting-section #setting-options #setting-detail div h1 i {
+  padding: 0 20px;
+  color: #1657cd;
+}
+
+body main #setting-section #setting-options #setting-detail div .actions {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main #setting-section #setting-options #setting-detail div .actions button {
+  margin: 5px;
+}
+
+body main #setting-section #setting-options #setting-detail div .actions .save {
+  cursor: pointer;
+  outline: none;
+  background-color: #1657cd;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 2.25px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+body main #setting-section #setting-options #setting-detail div .actions .cancel {
+  cursor: pointer;
+  outline: none;
+  background-color: #1657cd;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 2.25px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #6f7070;
+  background-color: transparent;
+}
+
+body main #setting-section #setting-options #setting-detail div .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body main #setting-section #setting-options #setting-detail div .options .option {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main #setting-section #setting-options #setting-detail div .options .option label {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  color: #202124;
+  text-transform: capitalize;
+}
+
+body main #setting-section #setting-options #setting-detail div .options .option input {
+  padding: 10px;
+  background-color: #f0f3f4;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  font-size: 14px;
+}
+
+body main #setting-section #setting-options #setting-detail div .options .option input:focus {
+  outline: none;
+}
+
+body main #setting-section #setting-options #setting-detail div p {
+  font-size: 14px;
+  color: #757575;
+  padding-left: 15px;
+}
+
+body main #setting-section #setting-options #setting-detail div input[type="checkbox"] {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 25px;
+  background-color: #f0f3f4;
+  -webkit-appearance: none;
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+body main #setting-section #setting-options #setting-detail div input[type="checkbox"]::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  background-color: #dbdbdb;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body main #setting-section #setting-options #setting-detail div input:checked[type="checkbox"] {
+  background-color: #E7EFFC;
+}
+
+body main #setting-section #setting-options #setting-detail div input:checked[type="checkbox"]::after {
+  left: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  background-color: #1657cd;
+}
+
+input {
+  border-radius: 3px;
+}
+/*# sourceMappingURL=styles.css.map */
